@@ -1,14 +1,10 @@
-import java.util.Scanner;
 
 public class MainController {
 	
 	public static void main(String args[]) {
 		
-		Scanner getInput = new Scanner(System.in);
-		System.out.println("Punan ng pangungusap: ");
-		String input = getInput.nextLine();
-		
+		String input = "siya ay isang madasalin bata. magaganda daw at malaki baso."; // input
 		CheckGrammar grammar = new CheckGrammar(input.trim()); // pass the clean string using trim()
-		System.out.println(grammar.getSentence());
+		System.out.println(grammar.getSentence()); // display
 	}
 }
